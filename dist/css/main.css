@@ -22,6 +22,12 @@
     margin: 2.625rem auto 2.938rem auto;
     background-color: #f38181; }
 
+.secondary-sub-title, .testimonal .first-sub-title {
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.5rem;
+  color: #333333; }
+
 .paragraph, .container .about-us-conatainer p, .container p {
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -435,16 +441,136 @@
       width: 100%; }
 
 .work-container {
+  margin-top: 14.70vh;
   font-size: 0;
   box-sizing: border-box;
   width: 100%;
   border: 1px solid red; }
 
-.work-container .four-photos {
-  display: inline-block; }
+.work-container {
+  width: 100%; }
+  .work-container .four-photos {
+    font-size: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+    width: 50%;
+    display: inline-block; }
+    .work-container .four-photos img {
+      width: 50%; }
+  .work-container .one-photo {
+    border: 2px solid green;
+    width: 50%;
+    display: inline-block; }
+    .work-container .one-photo img {
+      width: 50%; }
+    .work-container .one-photo .meduza {
+      width: 50%;
+      display: inline-block; }
+  .work-container .two-photos {
+    border: 1px solid orange;
+    display: inline-block;
+    width: 50%; }
+    .work-container .two-photos img {
+      width: 100%; }
 
-.work-container .one-photo {
-  display: inline-block; }
+.container-testimonal {
+  font-size: 0;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid red; }
+  .container-testimonal .icon-container {
+    border: 1px solid red;
+    display: inline-block;
+    vertical-align: top; }
+  .container-testimonal .woman {
+    display: inline-block; }
+    .container-testimonal .woman img {
+      display: inline-block;
+      width: 150px; }
+  .container-testimonal .testimonal-container {
+    width: 70%;
+    border: 1px solid #333333;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px; }
+  .container-testimonal .testimonal-inner {
+    margin-top: 25px;
+    border: 1px solid green;
+    display: inline-block;
+    width: 60%;
+    margin-left: 1.875rem;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    color: #9f9f9f; }
+    .container-testimonal .testimonal-inner p {
+      font-size: 24px;
+      text-align: left;
+      line-height: 25px; }
+  .container-testimonal .line {
+    width: 3.75rem;
+    border: 2px solid #f38181;
+    display: inline-block;
+    vertical-align: middle; }
+  .container-testimonal .jon-doe {
+    font-family: "Kaushan Script", cursive;
+    color: #333333; }
+  .container-testimonal .left {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 4.063rem;
+    margin-right: 4.375rem; }
+  .container-testimonal .right {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 4.063rem;
+    margin-left: 4.375rem; }
 
-.work-container .two-photos {
-  display: inline-block; }
+.testimonal {
+  background-image: url("/dist/img/Layer 53.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: auto; }
+  .testimonal .people-container {
+    margin: 0 auto;
+    width: 80%; }
+  .testimonal .people-icon {
+    display: inline-block;
+    padding-right: 30px;
+    vertical-align: top; }
+    .testimonal .people-icon img {
+      display: inline-block; }
+  .testimonal .people {
+    width: 50%;
+    display: inline-block; }
+    .testimonal .people .content-people {
+      padding-top: 10px;
+      display: inline-block;
+      width: 75%; }
+    .testimonal .people .people1 {
+      width: 100%;
+      display: inline-block; }
+    .testimonal .people h4 {
+      font-family: "Montserrat", sans-serif;
+      color: #333333;
+      font-size: 14px; }
+    .testimonal .people .people-title {
+      font-family: "Roboto", sans-serif;
+      font-size: 15px;
+      font-style: italic;
+      color: #b2b2b2; }
+      .testimonal .people .people-title.people-title::after {
+        content: '';
+        display: block;
+        width: 61px;
+        height: 3px;
+        text-align: center;
+        background-color: #f38181; }
+    .testimonal .people p {
+      text-align: left;
+      padding-bottom: 80px;
+      padding-right: 40px; }
+    .testimonal .people h3 {
+      margin-top: 0; }
+  .testimonal .first-sub-title {
+    padding-top: 155px; }

@@ -46,6 +46,17 @@ $roboto: 'Roboto', sans-serif;
       }
   }
 
+  .secondary-sub-title {
+    text-align: center;
+    font-family: $kaushan;
+    font-size: 1.5rem;
+    color: $black;
+    // margin-top: 5.75rem;
+    // margin-bottom: 1.563;
+  }
+
+ 
+
   .paragraph {
     text-align: center;
     
@@ -692,6 +703,7 @@ h2 {
  //*logos end*//
 //* our work*//
  .work-container {
+  margin-top: 14.70vh;
   font-size: 0;
   box-sizing: border-box;
   width: 100%;
@@ -700,16 +712,212 @@ h2 {
  }
 //*our work end*//
 .work-container {
+  width: 100%;
+  // height: 783px;
 
   .four-photos {
+    font-size: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+    width: 50%;
     display: inline-block;
+    // width: 50%;
+
+    img {
+      width: 50%;
+    }
   }
   .one-photo {
+    border: 2px solid green;
+    width: 50%;
     display: inline-block;
     
+    img {
+      width: 50%;
+      
+    }
+    .meduza {
+      width: 50%;
+      display: inline-block;
+      
+      // display: inline-block;
+    }
   }
   .two-photos {
+    border: 1px solid orange;
     display: inline-block;
+    width: 50%;
+
+    img {
+      width: 100%;
+    }
   }
 
 }
+//*our work end*//
+.container-testimonal {
+  font-size: 0;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid red;
+  
+  
+  .icon-container {
+    border: 1px solid red;
+    // width: 20%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .woman {
+    display: inline-block;
+    img {
+      display: inline-block;
+      width: 150px;
+      // border: 3px solid $light-blue;
+      // padding: 3.89vh 3.89vh;
+    }
+  }
+  .testimonal-container {
+    width: 70%;
+    border: 1px solid #333333;
+    margin: 0 auto;
+    // padding-top: 70px;
+    // padding-bottom: 70px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+  }
+  .testimonal-inner {
+    margin-top: 25px;
+    border: 1px solid green;
+    display: inline-block;
+    width: 60%;
+    margin-left: 1.875rem;
+    
+    font-family: $roboto;
+    font-style: italic;
+    color: $gray-gray;
+
+    p {
+      font-size: 24px;
+      text-align: left;
+      line-height: 25px;
+    }
+
+    
+    }
+    .line {
+      width: 3.75rem;
+      border: 2px solid $pink;
+      // background-color: $pink;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .jon-doe {
+      font-family: $kaushan;
+      color: $black;
+    }
+    .left {
+      display: inline-block;
+      // border: 1px solid red;
+      vertical-align: top;
+      margin-top: 4.063rem;
+      margin-right: 4.375rem;
+      
+    }
+    .right {
+       display: inline-block;
+      // border: 1px solid red;
+      vertical-align: top;
+      margin-top: 4.063rem;
+      margin-left: 4.375rem;
+    }
+ 
+}
+
+//*what people say*//
+.testimonal {
+  background-image: url('/dist/img/Layer\ 53.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: auto;
+  
+ 
+  .people-container {
+    margin: 0 auto;
+    width: 80%;
+    // border: 1px solid red;
+  }
+  .people-icon {
+    display: inline-block;
+    padding-right: 30px;
+    vertical-align: top;
+    // border: 1px solid red;
+    // margin-right: 30px;
+    // width: ;
+
+    img {
+      display: inline-block;
+    }
+  }
+  .people {
+    // border: 1px solid red;
+    width: 50%;
+    display: inline-block;
+
+    .content-people {
+      padding-top: 10px;
+      // border: 1px solid black;
+      display: inline-block;
+      // margin-left: 10px;
+      width: 75%;
+    }
+    .people1 {
+      // border: 1px solid red;
+      width: 100%;
+      display: inline-block;
+      // margin-right: 20px;
+    }
+    // span {
+    //   display: inline-block;
+    // }
+    h4 {
+      font-family: $monserat;
+      color: $black;
+      font-size: 14px;
+    }
+    .people-title {
+      font-family: $roboto;
+      font-size: 15px;
+      font-style: italic;
+      color: $gray-lighten;
+
+      &.people-title::after {
+        content: '';
+        display: block;
+        width: 61px;
+        height: 3px;
+        text-align: center;
+        // margin: 2.625rem auto 2.938rem auto; ;
+        background-color: $pink;
+      }
+      
+    }
+    p {
+      text-align: left;
+      padding-bottom: 80px;
+      padding-right: 40px;
+    }
+    h3 {
+      margin-top: 0;
+    }
+    
+    
+  }
+  .first-sub-title {
+    @extend .secondary-sub-title;
+    padding-top: 155px;
+  }
+}
+//*what people say*//
