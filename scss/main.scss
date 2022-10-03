@@ -13,6 +13,8 @@ $gray: #f8f8f8;
 $gray-lighten: #b2b2b2;
 $light-gray: #cccccc;
 $lightes-gray: #e5e5e5;
+$lightest-gray: #f5f5f5;
+$gray-gray : #9f9f9f;
 /*shrift*/
 $monserat:'Montserrat', sans-serif;
 $kaushan: 'Kaushan Script', cursive;
@@ -54,7 +56,6 @@ $roboto: 'Roboto', sans-serif;
 //*extends*//
 
 * {
-  
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -64,7 +65,7 @@ $roboto: 'Roboto', sans-serif;
 //*header*//
 
 .header {
-    border: 1px solid red;
+    // border: 1px solid red;
     font-size: 0;
     width: 100%;
   } 
@@ -72,7 +73,7 @@ $roboto: 'Roboto', sans-serif;
     .header-logo {
       width: 50%;
     //   padding-left: 15rem;
-      border: 1px solid red;
+      // border: 1px solid red;
       display: inline-block;
       text-align: center;
       font-size: 1.875rem;
@@ -85,7 +86,7 @@ $roboto: 'Roboto', sans-serif;
     
     .nav {
     width: 50%;
-    border: 1px solid red;
+    // border: 1px solid red;
       vertical-align: top;
       display: inline-block;
       z-index: 15;
@@ -200,7 +201,7 @@ $roboto: 'Roboto', sans-serif;
 .slider {
   font-size: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  // border: 1px solid red;
   display: inline-block;
   text-align: center;
   width: 100vw;
@@ -236,7 +237,7 @@ $roboto: 'Roboto', sans-serif;
   width: 100vw;
 }
 .container {
-    border: 1px solid red;
+    // border: 1px solid red;
     font-size: 0;
     box-sizing: border-box;
     width: 100vw;
@@ -331,7 +332,7 @@ $roboto: 'Roboto', sans-serif;
       .services-inner-container {
         width: 60%;
         margin: 0 auto;
-        border: 1px solid black;
+        // border: 1px solid black;
       }
    
       .service-section1 {
@@ -341,14 +342,14 @@ $roboto: 'Roboto', sans-serif;
       }
   
       .section-inner {
-        border: 1px solid red;
+        // border: 1px solid red;
         width: 100%;
         margin-bottom: 1.875rem;
       }
   
   
       .section-inner1 {
-        border: 1px solid red;
+        // border: 1px solid red;
         width: 100%;
         margin-top: 1.875rem;
       }
@@ -375,11 +376,10 @@ $roboto: 'Roboto', sans-serif;
         display: inline-block;
         text-align: left;
   
-        .service-paragraph {
-          width: 100vw;
-        }
+        
   
          p {
+          text-align: left;
           font-size: 0.875rem;
           font-family: $roboto;
           color: $gray-lighten;
@@ -389,7 +389,7 @@ $roboto: 'Roboto', sans-serif;
       }
   
     .img {
-      border: 1px solid black;
+      // border: 1px solid black;
       vertical-align: top;
       margin-right: 1.563rem;
       margin-top: 0.625rem;
@@ -456,20 +456,27 @@ h2 {
     margin: 0 auto;
 
   }
+  .service2-inner {
+    // border: 1px solid green;
+    width: 80%;
+    margin: 0 auto;
+  }
   .photo {
     display: inline-block;
     // border: 1px solid black;
     vertical-align: top;
-    width: 45%;
+    margin-left: 80px;
+    width: 40%;
   }
  
   .wrapper{
     display: inline-block;
-    width: 50%;
-    height: 380px;
-    margin-left: 20px;
+    width: 40%;
+    // height: 380px;
+    margin-left: 2.20vw;
     // border: 1px solid red;
   }
+
   
   .wrapper .accordion_item .accordion_tab{
     background: #fff;
@@ -515,11 +522,32 @@ h2 {
   
   .wrapper .accordion_item .accordion_content p{
     font-size: 14px;
-    line-height: 22px;
+    line-height: 20px;
     text-align: left;
     padding: 20px;
     color: #858aa5; 
-    height: 150px;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+    // padding-top: 20px;
+    // margin-top: 10px;
+    
+    
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px $lightest-gray; 
+    border-radius: 10px;
+    margin-top: 10px;
+    // margin-bottom: 20px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $light-blue; 
+    border-radius: 10px;
+    // margin-top: 20px;
   }
   
   .wrapper .accordion_item .accordion_tab.active + .accordion_content{
@@ -533,6 +561,155 @@ h2 {
     margin-bottom: 10px;
   }
 }
+//*service2 end*//
+//*quote *//
+.container-quote {
+  font-size: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  // border: 1px solid red;
+  background-color: $gray;
+  
+  .icon-container {
+    // border: 1px solid red;
+    // width: 20%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .speech {
+    
+    img {
+      border: 3px solid $light-blue;
+      padding: 3.89vh 3.89vh;
+    }
+  }
+  .quote-container {
+    width: 60%;
+    // border: 1px solid #333333;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-top: 120px;
+    // margin-bottom: 70px;
 
+  }
+  .quote-inner {
+    // border: 1px solid green;
+    display: inline-block;
+    width: 60%;
+    margin-left: 1.875rem;
+    font-size: 1.5rem;
+    font-family: $roboto;
+    font-style: italic;
+    color: $gray-gray;
 
+    
+    }
+    .line {
+      width: 3.75rem;
+      border: 2px solid $pink;
+      // background-color: $pink;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .jon-doe {
+      font-family: $kaushan;
+      color: $black;
+    }
+    .left {
+      display: inline-block;
+      // border: 1px solid red;
+      vertical-align: top;
+      margin-top: 4.063rem;
+      margin-right: 4.375rem;
+      
+    }
+    .right {
+       display: inline-block;
+      // border: 1px solid red;
+      vertical-align: top;
+      margin-top: 4.063rem;
+      margin-left: 4.375rem;
+    }
  
+}
+//*quote end*//
+//*our teaam*//
+ .container {
+
+  .team-container {
+    width: 65%;
+    border: 1px solid red;
+    margin: 0 auto;
+
+    // img {
+    //   display: inline-block;
+    //   // width: 380px;
+    //   width: 30%;
+    //   // text-align: center;
+    // }
+
+    .team-content {
+      display: inline-block;
+      width: 30%;
+      // margin-left: 20px;
+      text-align: center;
+    }
+    .team-second {
+      margin-left: 1.5625vw;
+      margin-right: 1.5625vw;
+    }
+    .team-name {
+      font-size: 14px;
+      font-family: $monserat;
+      color: $black;
+    }
+    .team-job {
+      font-size: 15px;
+      font-family: $roboto;
+      font-style: italic;
+      color: $gray-lighten;;
+    }
+  }
+ }
+ //*logos*//
+ .logos-container {
+  font-size: 0;
+  box-sizing: border-box;
+  margin-top: 13vh;
+  width: 100%;
+  background-color: $gray;
+
+  .logos {
+    width: 70%;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+  }
+ }
+ //*logos end*//
+//* our work*//
+ .work-container {
+  font-size: 0;
+  box-sizing: border-box;
+  width: 100%;
+  border:  1px solid red;
+
+ }
+//*our work end*//
+.work-container {
+
+  .four-photos {
+    display: inline-block;
+  }
+  .one-photo {
+    display: inline-block;
+    
+  }
+  .two-photos {
+    display: inline-block;
+  }
+
+}

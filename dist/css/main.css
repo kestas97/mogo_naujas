@@ -35,13 +35,11 @@
   border: 0; }
 
 .header {
-  border: 1px solid red;
   font-size: 0;
   width: 100%; }
 
 .header-logo {
   width: 50%;
-  border: 1px solid red;
   display: inline-block;
   text-align: center;
   font-size: 1.875rem;
@@ -52,7 +50,6 @@
 
 .nav {
   width: 50%;
-  border: 1px solid red;
   vertical-align: top;
   display: inline-block;
   z-index: 15;
@@ -136,7 +133,6 @@
 .slider {
   font-size: 0;
   box-sizing: border-box;
-  border: 1px solid red;
   display: inline-block;
   text-align: center;
   width: 100vw; }
@@ -162,7 +158,6 @@
   width: 100vw; }
 
 .container {
-  border: 1px solid red;
   font-size: 0;
   box-sizing: border-box;
   width: 100vw; }
@@ -221,18 +216,15 @@
   width: 100%; }
   .container .services-container .services-inner-container {
     width: 60%;
-    margin: 0 auto;
-    border: 1px solid black; }
+    margin: 0 auto; }
   .container .services-container .service-section1 {
     width: 100%;
     text-align: center;
     border-bottom: 2px solid #e5e5e5; }
   .container .services-container .section-inner {
-    border: 1px solid red;
     width: 100%;
     margin-bottom: 1.875rem; }
   .container .services-container .section-inner1 {
-    border: 1px solid red;
     width: 100%;
     margin-top: 1.875rem; }
   .container .services-container .service-section2 {
@@ -248,14 +240,12 @@
     margin-right: 60px;
     display: inline-block;
     text-align: left; }
-    .container .services-container .service-iteme .service-paragraph {
-      width: 100vw; }
     .container .services-container .service-iteme p {
+      text-align: left;
       font-size: 0.875rem;
       font-family: "Roboto", sans-serif;
       color: #b2b2b2; }
   .container .services-container .img {
-    border: 1px solid black;
     vertical-align: top;
     margin-right: 1.563rem;
     margin-top: 0.625rem; }
@@ -282,16 +272,20 @@
   width: 80%;
   margin: 0 auto; }
 
+.container .service2-inner {
+  width: 80%;
+  margin: 0 auto; }
+
 .container .photo {
   display: inline-block;
   vertical-align: top;
-  width: 45%; }
+  margin-left: 80px;
+  width: 40%; }
 
 .container .wrapper {
   display: inline-block;
-  width: 50%;
-  height: 380px;
-  margin-left: 20px; }
+  width: 40%;
+  margin-left: 2.20vw; }
 
 .container .wrapper .accordion_item .accordion_tab {
   background: #fff;
@@ -332,11 +326,26 @@
 
 .container .wrapper .accordion_item .accordion_content p {
   font-size: 14px;
-  line-height: 22px;
+  line-height: 20px;
   text-align: left;
   padding: 20px;
   color: #858aa5;
-  height: 150px; }
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  overflow-y: scroll; }
+
+.container ::-webkit-scrollbar {
+  width: 5px; }
+
+.container ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #f5f5f5;
+  border-radius: 10px;
+  margin-top: 10px; }
+
+.container ::-webkit-scrollbar-thumb {
+  background: #95e1d3;
+  border-radius: 10px; }
 
 .container .wrapper .accordion_item .accordion_tab.active + .accordion_content {
   display: block;
@@ -347,3 +356,95 @@
 
 .container .accordion_item {
   margin-bottom: 10px; }
+
+.container-quote {
+  font-size: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  background-color: #f8f8f8; }
+  .container-quote .icon-container {
+    display: inline-block;
+    vertical-align: top; }
+  .container-quote .speech img {
+    border: 3px solid #95e1d3;
+    padding: 3.89vh 3.89vh; }
+  .container-quote .quote-container {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-top: 120px; }
+  .container-quote .quote-inner {
+    display: inline-block;
+    width: 60%;
+    margin-left: 1.875rem;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    color: #9f9f9f; }
+  .container-quote .line {
+    width: 3.75rem;
+    border: 2px solid #f38181;
+    display: inline-block;
+    vertical-align: middle; }
+  .container-quote .jon-doe {
+    font-family: "Kaushan Script", cursive;
+    color: #333333; }
+  .container-quote .left {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 4.063rem;
+    margin-right: 4.375rem; }
+  .container-quote .right {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 4.063rem;
+    margin-left: 4.375rem; }
+
+.container .team-container {
+  width: 65%;
+  border: 1px solid red;
+  margin: 0 auto; }
+  .container .team-container .team-content {
+    display: inline-block;
+    width: 30%;
+    text-align: center; }
+  .container .team-container .team-second {
+    margin-left: 1.5625vw;
+    margin-right: 1.5625vw; }
+  .container .team-container .team-name {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: #333333; }
+  .container .team-container .team-job {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    color: #b2b2b2; }
+
+.logos-container {
+  font-size: 0;
+  box-sizing: border-box;
+  margin-top: 13vh;
+  width: 100%;
+  background-color: #f8f8f8; }
+  .logos-container .logos {
+    width: 70%;
+    margin: 0 auto; }
+    .logos-container .logos img {
+      width: 100%; }
+
+.work-container {
+  font-size: 0;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid red; }
+
+.work-container .four-photos {
+  display: inline-block; }
+
+.work-container .one-photo {
+  display: inline-block; }
+
+.work-container .two-photos {
+  display: inline-block; }
