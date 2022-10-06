@@ -502,6 +502,7 @@ h2 {
 
 .phone {
   // border: 1px solid red;
+
   position: absolute;
   left: 50%;
   transform: translate(30%, -78%);
@@ -1079,7 +1080,7 @@ h2 {
       display: inline-block;
       margin-bottom: 80px;
     }
-    @media screen and (max-width: 1201px){
+    @media screen and (min-width: 1201px){
       .people1 {
         // text-align: center;
         display: inline-block;
@@ -1141,17 +1142,15 @@ h2 {
   }
   .latest-blog-container {
     text-align: center;
-    width: 60%;
+    width: 100%;
     // border: 1px solid red;
-    // margin-bottom: 120px;
     margin: 0 auto;
 
   }
-  @media screen and (max-width: 1201px){
+  @media screen and (min-width: 1201px){
     .latest-blog-container {
       width: 100%;
       // border: 1px solid red;
-      // margin-bottom: 120px;
       margin: 0 auto;
   
     }
@@ -1200,6 +1199,7 @@ h2 {
   
   .blog-title {
     font-size: 14px;
+    text-align: left;
     font-family: $monserat;
     color: $black;
     padding: 20px 0 20px 0;
@@ -1212,6 +1212,7 @@ h2 {
     padding-bottom: 20px;
   }
   .blog-views {
+    text-align: left;
     padding-top: 20px;
     border-top: 1px solid $lightes-gray;
     span {
@@ -1294,15 +1295,12 @@ h2 {
 footer {
   background-color: $gray;
   width: 100%;
-  // margin-top: 70px;
 }
  .footer-container {
   font-size: 0;
   box-sizing: border-box;
-  width: 60%;
-  // margin-top: 100px;
-  border: 1px solid red;
-  margin: 0 auto;
+  width: 100%;
+
 
   .folow-us-container {
     margin-top: 15px;
@@ -1317,16 +1315,15 @@ footer {
     font-family: $roboto;
     font-style: italic;
     font-style: normal;
-    font-size: 14px;
+    font-size: 20px;
+    margin-left: 10px;
     color: $gray-lighten;
 
   }
 
  .footer-content {
-  display: inline-block;
-  width: 30%;
-  margin-top: 75px;
-  border: 1px solid black;
+  width: 100%;
+  // border: 1px solid black;
 
   h1 {
     font-size: 46px;
@@ -1334,27 +1331,28 @@ footer {
     font-weight: bold;
     color: $light-gray;
     margin-bottom: 40px;
+    margin-left: 10px;
   }
 
   .first-paragraph {
     color: $light-gray;
-    font-size: 15px;
+    font-size: 20px;
     font-family: $roboto;
     margin-bottom: 50px;
+    margin-left: 10px;
 
   }
   .folower {
-    font-size: 14px;
+    font-size: 18px;
     font-family: $monserat;
     color: $gray-dark;
     
   }
   span.folower-number {
-    font-size: 18px;
+    font-size: 20px;
     font-family: $monserat;
     font-weight: bold;
-    // margin-bottom: 40px;
-    
+    margin-left: 10px;
 
   }
   .footer-first {
@@ -1362,7 +1360,7 @@ footer {
     
   }
   .first-span {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
  
   div.subscribe {
@@ -1371,22 +1369,232 @@ footer {
     .subscribe-form {
 
       input[type="text"] {
-        font-size: 15px;
+        margin-left: 10px;
+        font-size: 20px;
         font-size: $roboto;
         font-style: italic;
         color: $gray-lighten;
         padding: 15px 15px 15px 0px;
-        width: 50%;
+        width: 40%;
         border: 1px solid $white-gray;
       }
       input[type="submit"] {
-        width: 40%;
-        font-size: 14px;
+        width: 30%;
+        font-size: 20px;
         font-family: $monserat;
         font-weight: bold;
         color: $white;
         background-color: $light-blue ;
-        padding: 15px 30px 15px 30px;
+        padding: 15px 15px 15px 30px;
+      }
+    }
+
+  }
+
+  
+
+ }
+
+ .second-content {
+  margin-top: 10px;
+  border-top: 2px solid $lightes-gray;
+  margin-bottom: 10px;
+
+ 
+  h3 {
+    font-family: $monserat;
+    font-size: 25px;
+    color: #636363;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    font-family: $monserat;
+    font-size: 20px;
+    color: $black;
+    margin-left: 20px;
+  }
+  
+
+  .blog-text {
+    margin-bottom: 30px;
+
+
+    &.blog-text:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+  .blog-img-date {
+    margin-top: 10px;
+    font-size: 15px;
+    font-style: italic;
+    margin-left: 20px;
+  
+  }
+  .second-img {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  .seconds-content {
+    display: inline-block;
+    // border:1px solid red;
+     width: 80%;
+  }
+  
+
+ }
+
+
+ .third-content { 
+  vertical-align: top;
+  border-top: 2px solid $lightes-gray;
+  border-bottom: 2px solid $lightes-gray;
+  h3 {
+    font-family: $monserat;
+    font-size: 25px;
+    color: #636363;
+    margin-bottom: 40px;
+    margin-left: 10px;
+  }
+
+  div > div {
+
+    img {
+      width: 50%;
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  
+ }
+ .copyright {
+
+  h2 {
+    text-align: center;
+    font-size: 15px;
+    font-family: $monserat;
+    color: $black;
+
+    span {
+      color: $pink;
+    }
+  }
+}
+
+}
+
+//*footer end*//
+}
+
+@media screen and (min-width: 1201px){
+  //*footer*//
+footer {
+  background-color: $gray;
+  width: 100%;
+
+}
+ .footer-container {
+  font-size: 0;
+  box-sizing: border-box;
+  width: 100%;
+  // border: 1px solid red;
+  margin: 0 auto;
+
+  .folow-us-container {
+    // border: 1px solid red;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    
+    
+  }
+  .social-icons {
+    margin-left: 20px;
+  }
+  .folow-us {
+    // border: 1px solid red;
+    font-family: $roboto;
+    font-style: italic;
+    font-style: normal;
+    font-size: 20px;
+    margin-left: 10px;
+    color: $gray-lighten;
+
+  }
+
+ .footer-content {
+  display: inline-block;
+  width: 40%;
+  margin-right: 20px;
+  vertical-align: top;
+  // border: 1px solid black;
+
+  h1 {
+    font-size: 46px;
+    font-family: $monserat;
+    font-weight: bold;
+    color: $light-gray;
+    margin-bottom: 40px;
+    margin-left: 10px;
+  }
+
+  .first-paragraph {
+    color: $light-gray;
+    font-size: 20px;
+    font-family: $roboto;
+    margin-bottom: 50px;
+    margin-left: 10px;
+
+  }
+  .folower {
+    font-size: 18px;
+    font-family: $monserat;
+    color: $gray-dark;
+    
+  }
+  span.folower-number {
+    font-size: 20px;
+    font-family: $monserat;
+    font-weight: bold;
+    margin-left: 10px;
+
+    
+
+  }
+  .footer-first {
+    border-bottom: 2px solid $lightes-gray;
+    
+  }
+  .first-span {
+    margin-bottom: 30px;
+  }
+ 
+  div.subscribe {
+    width: 100%;
+
+    .subscribe-form {
+
+      input[type="text"] {
+        margin-left: 10px;
+        font-size: 20px;
+        font-size: $roboto;
+        font-style: italic;
+        color: $gray-lighten;
+        padding: 15px 15px 15px 0px;
+        width: 40%;
+        border: 1px solid $white-gray;
+      }
+      input[type="submit"] {
+        width: 30%;
+        font-size: 20px;
+        font-family: $monserat;
+        font-weight: bold;
+        color: $white;
+        background-color: $light-blue ;
+        padding: 15px 15px 15px 15px;
       }
     }
 
@@ -1399,27 +1607,33 @@ footer {
  .second-content {
   vertical-align: top;
   display: inline-block;
+  width: 30%;
+  margin-top: 0px;
+
 
  
   h3 {
     font-family: $monserat;
-    font-size: 14px;
+    font-size: 25px;
     color: #636363;
+    margin-top: 10px;
+    margin-left: 10px;
     margin-bottom: 40px;
   }
 
   h2 {
     font-family: $monserat;
-    font-size: 12px;
+    font-size: 14px;
     color: $black;
+    margin-left: 20px;
   }
   
 
   .blog-text {
-    margin-bottom: 30px;
-    border: 1px solid red;
+    margin-bottom: 57px;
+    // border: 1px solid red;
     display: inline-block;
-    vertical-align: top;
+
 
     &.blog-text:last-child {
       margin-bottom: 0;
@@ -1428,9 +1642,20 @@ footer {
   }
   .blog-img-date {
     margin-top: 10px;
-    font-size: 13px;
+    font-size: 14px;
     font-style: italic;
+    // margin-left: 20px;
   
+  }
+  .second-img {
+    display: inline-block;
+    
+  }
+  .seconds-content {
+    vertical-align: top;
+    display: inline-block;
+    // border:1px solid red;
+     width: 60%;
   }
   
 
@@ -1438,28 +1663,70 @@ footer {
 
 
  .third-content { 
+  width: 25%;
+  // margin-left: 0;
   vertical-align: top;
+  border-bottom: none;
+ 
   h3 {
     font-family: $monserat;
-    font-size: 14px;
+    font-size: 25px;
     color: #636363;
     margin-bottom: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
   }
+  .insta-p {
+    margin-top: 10px;
+    font-size: 15px;
+    color: $black;
+    font-family: $monserat;
+    margin-left: 10px;
+  }
+
+  div > div {
+
+    img {
+      width: 90%;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      height: 39vh;
+    }
+
+   
+  }
+ 
+
+ 
  }
- .second-img {
-  display: inline-block;
-}
-.seconds-content {
-  display: inline-block;
-  border:1px solid red;
-   width:55%;
+ .copyright {
+  border-top: 2px solid $lightes-gray;
+  h2 {
+    text-align: center;
+    font-size: 15px;
+    font-family: $monserat;
+    color: $black;
+    margin: 10px 10px;
+
+    span {
+      color: $pink;
+    }
+  }
 }
 
+
 }
+
+//*mobile footer*//
 
 
 //*footer end*//
 }
+//*media footer end*//
+  
+
+
+
 
 
 @media  screen and (max-width: 768px) {
